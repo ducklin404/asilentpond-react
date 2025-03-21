@@ -8,7 +8,7 @@ export default function App() {
       <img className="logo" src="./duck.webp" alt="duck logo" />
       <h1>A Silent Pond</h1>
       <div id="description">
-        <p>Here are all projects and resources I have created</p>
+        <p>Hey, I'm Duck. Hope these resource could help you!</p>
       </div>
 
       <div id="projects-display">

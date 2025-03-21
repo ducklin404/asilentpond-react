@@ -13,7 +13,7 @@ export default function ProjectDescription({
       <h2>{projectTitle}</h2>
 
       {videoUrl && (
-        <>
+        <div className = "video-content">
           <p>If you prefer the video:</p>
 
           <iframe
@@ -24,7 +24,7 @@ export default function ProjectDescription({
             frameborder="0"
             allowFullScreen
           ></iframe>
-        </>
+        </div>
       )}
 
       <div className="markdown-content">
