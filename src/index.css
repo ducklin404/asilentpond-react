@@ -49,6 +49,10 @@ html body {
   z-index: 1000;
 }
 
+#project-description button:hover {
+  background-color: rgb(173, 215, 252);
+}
+
 #project-description a {
   color:aquamarine
 }
@@ -80,6 +84,7 @@ html body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -88,7 +93,7 @@ html body {
 }
 
 .project-card .project-title {
-  margin-left: 5px;
+  margin-left: 5%;
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: bold;
