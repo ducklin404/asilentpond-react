@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProjectDisplay from "./components/project_display";
+import projectData from "./data/projects.json";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img className="logo" src="./duck.webp" alt="duck logo" />
+      <h1>A Silent Pond</h1>
+      <div id="description">
+        <p>Here are all projects and resources I have created</p>
+      </div>
+
+      <div id="projects-display">
+        {projectData.categories.map((category, index) => (
+          <div key={index} className="project-category">
+            <h2>{category.name}</h2>
+            <div className="projects">
+              {category.projects.map((project, projIndex) => (
+                <ProjectDisplay
+                  key={projIndex}
+                  id={project.id}
+                  imageUrl={project.imageUrl}
+                  imageAlt={project.imageAlt}
+                  projectTitle={project.projectTitle}
+                  videoUrl={project.videoUrl}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,17 @@
+{
+    "categories": [
+      {
+        "name": "Website",
+        "projects": [
+          {
+            "id": "jack-of-all-trades",
+            "imageUrl": "./jack-of-all-trades.jpg",
+            "imageAlt": "Jack of All Trades",
+            "projectTitle": "Jack of All Trades",
+            "videoUrl": "https://www.youtube.com/embed/9KncdRZyKwQ"
+          }
+        ]
+      }
+    ]
+  }
+  
